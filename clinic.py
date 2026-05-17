@@ -1,14 +1,19 @@
 clinic.py — Patient Management System v1.0
 patients = []
 def add_patient(name, age):
- patient = {"name": name, "age": age}
+ atient = {
+ "name": name,
+ "age": age,
+ "condition": condition,
+ "doctor": doctor
+ }
  patients.append(patient)
- print("Patient added.")
+ print(f"Patient {name} added under Dr. {doctor}."
 def view_patients():
  for p in patients:
  print(p)
 def main():
- add_patient("Nimal", 35)
- add_patient("Amali", 28)
- view_patients()
+ dd_patient("Nimal", 35, "Diabetes", "Dr. Silva")
+ add_patient("Amali", 28, "Hypertension", "Dr. Perera")
+ view_patients(
 main()
